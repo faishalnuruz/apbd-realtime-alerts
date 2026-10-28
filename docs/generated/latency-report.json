@@ -1,0 +1,26 @@
+{
+  "events_inserted": 200,
+  "events_measured": 200,
+  "pace_ms": 50,
+  "batch": 10,
+  "latency": {
+    "count": 200,
+    "p50_ms": 1492,
+    "p90_ms": 2343,
+    "p95_ms": 2483,
+    "p99_ms": 2492,
+    "max_ms": 3165,
+    "mean_ms": 1608.5
+  },
+  "alert": {
+    "skpd": [
+      "1.03.03",
+      "1.05.05"
+    ],
+    "payload": "docs/generated/rt_alert_payload.json",
+    "sent": false,
+    "decision_latency_ms": 1490
+  },
+  "sla_ms": 30000,
+  "passed": true
+}

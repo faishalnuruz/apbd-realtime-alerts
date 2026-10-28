@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apbd-realtime-alerts"
+version = "0.1.0"
+description = "Project 2 of the BPKD PRD, built for real: SIMDA MySQL -> Debezium -> Kafka -> masking consumer -> >90% pagu alert, with measured end-to-end latency."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+  "kafka-python>=2.2,<3",
+  "pymysql>=1.1,<2",
+  "requests>=2.32,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<9",
+  "ruff>=0.8,<1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = [
+  "integration: needs the compose stack (MySQL, Kafka, Debezium) running",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = [".venv", "data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

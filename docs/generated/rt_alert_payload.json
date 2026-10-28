@@ -1,0 +1,26 @@
+{
+  "text": "Realisasi APBD: 2 SKPD melewati 90% pagu",
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "*SIKT APBD \u2014 2 SKPD melewati 90% pagu*\n_Realisasi vs pagu, dari stream CDC (terverifikasi mesin)._"
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "*1.05.05* Dinas Sosial\nRealisasi Rp 855.60 M dari pagu Rp 900.63 M \u2014 sisa Rp 45.03 M (95.00%)"
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "*1.03.03* Dinas Pendidikan\nRealisasi Rp 827.55 M dari pagu Rp 900.00 M \u2014 sisa Rp 72.45 M (91.95%)"
+      }
+    }
+  ]
+}
