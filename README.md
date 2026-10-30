@@ -129,6 +129,9 @@ in the workflow itself.
 
 - [`sikt-mini-lakehouse`](https://github.com/faishalnuruz/sikt-mini-lakehouse) — the P1 flagship:
   same source shape, lakehouse + dbt + Metabase side of the story.
+- [`apbd-observability`](https://github.com/faishalnuruz/apbd-observability) — the P3 sibling
+  that closed this repo's third "next step": the governance layer over the same source — real
+  OpenMetadata catalog, contract quality scores, RBAC gateway, Prometheus + Grafana.
 - [`streaming-ai-features`](https://github.com/faishalnuruz/streaming-ai-features) — the other
   streaming repo in the portfolio: windowed metrics and per-session vectors with watermarks.
 
